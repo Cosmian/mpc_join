@@ -1,0 +1,26 @@
+[package]
+name = "rust_git"
+version = "0.1.0"
+authors = ["Benjamin Coenen <benjamin.coenen@cosmian.com>"]
+edition = "2018"
+
+[dependencies]
+cosmian_std = { version = "0.1.0" }
+
+[features]
+emulate = ["cosmian_std/emulate"]
+
+[profile.dev]
+overflow-checks = false
+
+[profile.release]
+# Note: Do not set `debug = true`, `wasm-opt` dies horribly if you do.
+panic = "abort"
+# LTO really cleans up the amount of wasm that is generated
+lto = true
+codegen-units = 1
+
+[workspace]
+
+[dev-dependencies]
+serde_json = "1.0.61"
