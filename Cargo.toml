@@ -1,8 +1,17 @@
 [package]
-name = "rust_git"
+name = "mpc_join"
 version = "0.1.0"
 authors = ["Benjamin Coenen <benjamin.coenen@cosmian.com>"]
 edition = "2018"
+
+[[bin]]
+name="scale_wasm"
+test=false
+bench=false
+path="src/main.rs"
+
+[workspace]
+# This is required to keep the package out of a workspace
 
 [dependencies]
 cosmian_std = { version = "0.1.0" }
@@ -19,8 +28,6 @@ panic = "abort"
 # LTO really cleans up the amount of wasm that is generated
 lto = true
 codegen-units = 1
-
-[workspace]
 
 [dev-dependencies]
 serde_json = "1.0.61"
