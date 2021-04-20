@@ -1,10 +1,10 @@
 # MPC Join (Confidential Data Science)
 
-Bob and Charlie have common customers and Alice would like to study the relationships between the amounts spent at Bob's, the category of purchases at Charlie's and the Customer Satisfaction recorded by both.
+Bob and Charlie have common customers and Alice would like to study the relationships between the amounts spent at Bob's, the category of purchases at Charlie's and the Customer Satisfaction Index recorded by both.
 
 Bob and Charlie are interested in Alice analysis results, however neither Bob nor Charlie wants to:
  - reveal their full list of customers to the other two
- - reveal the common customer IDs to Alice
+ - reveal their common customer IDs to Alice
  - reveal their satisfaction index to Alice
 
  Alice is going to use [CipherCompute EAP](https://github.com/Cosmian/CipherCompute) to perform a confidential calculation that will secretly perform an inner join (an intersection) between Bob and Charlie customers datasets and for every matching customer row:
@@ -40,7 +40,7 @@ The code in `src/main.rs` implements this confidential collaborative computation
 
 ## Data Science: confidential datasets preparation
 
-This example illustrates how to solve one of the biggest pain in performing data science on confidential data from multiple sources: creating the dataset to be analyzed in the first place!
+This example illustrates how to solve one of the biggest pain in performing data science on confidential data from multiple sources: generating the dataset to be analyzed in the first place!
 
 It also illustrates how using CipherCompute makes it possible to secretly manipulate IDs (to perform a join here) then anonymize the dataset by simply dropping them before output.
 
