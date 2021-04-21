@@ -19,10 +19,12 @@ For example:
         id  |  amount | sat. index
      -------|---------|------------ 
       17600 |   82721 |         83 
+      21000 |   45234 |         65       
 
     Charlie Secret Input:
         id  |  categ. | sat. index
      -------|---------|------------ 
+      13200 |       1 |         36 
       17600 |       3 |         97 
 
     ==> Output to Alice:
