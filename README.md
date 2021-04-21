@@ -27,7 +27,7 @@ For example:
       13200 |       1 |         36 
       17600 |       3 |         97 
 
-    ==> Output to Alice:
+    ==> Output to Alice (match on id=17600):
         amount |  categ. | composite
      ----------|---------|---------- 
          82721 |       3 |     457 
