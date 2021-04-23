@@ -95,7 +95,7 @@ To facilitate testing without having to run [CipherCompute EAP](https://github.c
 2. commit the change to the local git and note the git commit
 
 3. Then use the `git-daemon.sh` script to launch a git daemon which exposes this project at
-`git://localhost:9418/mpc_join`
+at a git URL displayed by the script
 
 From the UI on the CipherCompute EAP version
 
