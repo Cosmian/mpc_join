@@ -16,8 +16,8 @@ fn main() {
     println!("##### Program starting");
     loop {
         // First, fetch the first row of data provider 1 and secretly recover the id
-        let mut row_dp_1 = InputRow::read(Player::<DATA_PROVIDER_1>); // [26, 0]
-                                                                      // The id is a `SecretModp`: its value never appears in clear text in the program memory
+        let mut row_dp_1 = InputRow::read(Player::<DATA_PROVIDER_1>); 
+        // The id is a `SecretModp`: its value never appears in clear text in the program memory
         let mut id_dp_1 = match row_dp_1.next_col() {
             Some(Column::SecretModp(id)) => id,
             None => {
