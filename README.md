@@ -11,7 +11,7 @@ Bob and Charlie are interested in Alice analysis results, however neither Bob no
 
  - drop the customer ID before outputting the intersection to Alice
  - output the `amount spent` (from Bob's) and the `category` (from Charlie's)
- - output a composite satisfaction index calculated as: `2 x Bob's + 3 x Charlie's`
+ - output a composite satisfaction index calculated as: `2 x Charlie's + 3 x Bob's`
 
 For example:
 
