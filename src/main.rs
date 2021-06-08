@@ -77,7 +77,7 @@ fn main() {
                         .into_secret_modp()
                         .expect("there should be a first value for DP 2"),
                 );
-                // Mow let us create a composite value = 2 * v2₁ + 3 * v2₂
+                // Now let us create a composite value = 2 * v2₁ + 3 * v2₂
                 let v2_dp_1 = row_dp_1
                     .next_col()
                     .unwrap()
