@@ -37,8 +37,8 @@ For example:
 
 The code in `src/main.rs` implements this confidential collaborative computation and shows how to
 
- - perform a secrete inner join in O(n) using a merge join which assumes the datasets are sorted by ID ascending. Is is very easy to change this code to perform other kind of secret joins: left, right or full outer join.
- - perform some secrete arithmetics combining secret data from 2 different datasets and scalar values.
+ - perform a secret inner join in O(n) using a merge join which assumes the datasets are sorted by ID ascending. Is is very easy to change this code to perform other kind of secret joins: left, right or full outer join.
+ - perform some secret arithmetics combining secret data from 2 different datasets and scalar values.
 
 
 ## Data Science: confidential datasets preparation
