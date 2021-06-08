@@ -30,7 +30,7 @@ fn main() {
             }
         };
 
-        // Then, fetch the first row of data provider 1 and secretly recover the id
+        // Then, fetch the first row of data provider 2 and secretly recover the id
         let mut row_dp_2 = InputRow::read(Player::<DATA_PROVIDER_2>); // [26, 0]
         let mut id_dp_2 = match row_dp_2.next_col() {
             Some(Column::SecretModp(id)) => id,
