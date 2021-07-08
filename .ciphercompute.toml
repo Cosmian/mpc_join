@@ -1,0 +1,3 @@
+[participants.0]
+output_column_names = [ "coucou", "toi", "test" ]
+
